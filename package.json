@@ -1,0 +1,29 @@
+{
+  "name": "chakra_three",
+  "version": "1.0.0",
+  "description": "My portfolio",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev":"next dev -H 0.0.0.0",
+    "prettier":"prettier -write .",
+    "lint":"next lint"
+  },
+  "keywords": [],
+  "author": "Bibek Lamichhane",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.31.0",
+    "eslint-config-next": "^13.1.1",
+    "prettier": "^2.8.1"
+  },
+  "dependencies": {
+    "@chakra-ui/react": "^2.4.6",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "framer-motion": "^8.1.4",
+    "next": "^13.1.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
