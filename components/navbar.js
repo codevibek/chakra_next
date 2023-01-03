@@ -4,6 +4,7 @@ import {
     Container,Box,Link,Stack,Heading,Flex,Menu,MenuItem,MenuList,MenuButton,IconButton,useColorModeValue,Button
 } from "@chakra-ui/react"
 import { HamburgerIcon } from "@chakra-ui/icons"
+import ThemeToggleButton from "./layouts/theme-toggle-button"
 
 const LinkItem =({href,path,children})=>{
     const active=path ===href
@@ -45,22 +46,23 @@ const Navbar =props=>{
         </LinkItem>
     </Stack>
     <Box flex={1} align="right">
+        <ThemeToggleButton/>
         <Box ml={2} display={{base:"inline-block", md:"none"}}>
             <Menu>
 
                 <MenuButton as={IconButton}  rightIcon ={<HamburgerIcon/>} variant="outline" aria-label="Options"/>
 
                <MenuList>
-                <NextLink href="/" passhref>
+                <NextLink href="/" passHref>
                     <MenuItem as={Link}>About</MenuItem>
                 </NextLink>
-                <NextLink href="/works" passhref>
+                <NextLink href="/works" passHref>
                     <MenuItem as={Link}>Works</MenuItem>
                 </NextLink>
-                <NextLink href="/videos" passhref>
+                <NextLink href="/videos" passHref>
                     <MenuItem as={Link}>Videos</MenuItem>
                 </NextLink>
-                <NextLink href="/blogs" passhref>
+                <NextLink href="/blogs" passHref>
                     <MenuItem as={Link}>Blogs</MenuItem>
                 </NextLink>
                     <MenuItem as={Link} href="/sourcecode">View Source</MenuItem>
